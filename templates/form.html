@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Please Fill Out This Form</h1>
+
+    <!-- Form submits via POST to the /submit-form route -->
+    <form action="/submit-form" method="POST">
+
+        <!-- Question 1 -->
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name"><br><br>
+
+        <!-- Question 2 -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Question 3 -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <!-- Question 4 -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <!-- Question 5 -->
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+
+        <!-- Question 6 -->
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation"><br><br>
+
+        <!-- Question 7 -->
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby"><br><br>
+
+        <!-- Question 8 -->
+        <label for="programming_language">Favorite Programming Language:</label>
+        <input type="text" id="programming_language" name="programming_language"><br><br>
+
+        <!-- Question 9 -->
+        <label for="online_hours">Online Hours per Week:</label>
+        <input type="number" id="online_hours" name="online_hours"><br><br>
+
+        <!-- Question 10 -->
+        <label for="entertainment">Entertainment Preference:</label>
+        <select id="entertainment" name="entertainment">
+            <option value="movies">Movies</option>
+            <option value="tv">TV Shows</option>
+            <option value="gaming">Gaming</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>

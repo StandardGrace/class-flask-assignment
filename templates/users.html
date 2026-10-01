@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+
+    <h1>Registered Users</h1>
+    <table border="1">
+        <tr>        
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Occupation</th>
+            <th>Hobby</th>
+            <th>Programming Language</th>
+            <th>Online Hours</th>
+            <th>Entertainment</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+            <td>{{ user[2] }}</td>
+            <td>{{ user[3] }}</td>
+            <td>{{ user[4] }}</td>
+            <td>{{ user[5] }}</td>
+            <td>{{ user[6] }}</td>
+            <td>{{ user[7] }}</td>
+            <td>{{ user[8] }}</td>
+            <td>{{ user[9] }}</td>
+            <td>{{ user[10] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
